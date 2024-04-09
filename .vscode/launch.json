@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://localhost:5000/api/recipes/search?searchTerm=burgers&page=1",
+            "request": "launch",
+            "url": "http://localhost:5000/api/recipes/search?searchTerm=burgers&page=1"
+        }
+    ]
+}

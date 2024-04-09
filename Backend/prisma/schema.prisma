@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model favoriteRecipes {
+  id Int @id @default(autoincrement())
+  recipeId Int @unique
+}
+
+//Prisma is often used in modern web development stacks, particularly in TypeScript and Node.js projects, to streamline database access and
+// management, improve developer productivity, and ensure type safety in database interactions. 
+//It's commonly used in combination with frameworks like Express.js, NestJS, or GraphQL APIs to build scalable and maintainable backend systems.
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init

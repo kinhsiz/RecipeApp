@@ -1,0 +1,43 @@
+recipeApp
+    |--Backend
+        |--package.json   //Initialize the package from Node.js with 'npm init'(1)
+        |-- package-lock.json  //npm install express prisma @prisma/client cors (2)
+
+
+
+(1) npm init is a command used in Node.js projects to initialize a new npm (Node Package Manager) package. When you run npm init, it prompts you with a series of questions about your project, such as the package name, version, description, entry point, test command, git repository, keywords, author, and license.
+
+After you've answered these questions (or accepted the default values), npm will generate a package.json file in your project directory. This file serves as a manifest for your project and includes metadata about the project as well as a list of dependencies that your project relies on. Having a package.json file is crucial for managing dependencies and running scripts in your Node.js project.
+
+./src/index.ts typically indicates that your project's main TypeScript file (.ts) is located in the src directory and named index.ts.
+
+By specifying ./src/index.ts as the entry point, you're telling npm where to start when your project is executed or imported as a module. This entry point file might contain the initialization logic, imports, or other setup necessary to run your TypeScript application.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+(2) The command npm install express prisma @prisma/client cors is used to install several npm packages for a Node.js project. Let's break down what each package does:
+
+    express: Express is a popular web application framework for Node.js. It provides a robust set of features for building web applications and APIs, including routing, middleware support, and handling HTTP requests and responses.
+
+    prisma: Prisma is a modern database toolkit for Node.js and TypeScript. It simplifies database access and management by providing an easy-to-use and type-safe API for working with databases.
+
+    @prisma/client: This is the Prisma client library, which is used to interact with your database from your Node.js application. It allows you to perform database queries and mutations in a type-safe manner, leveraging TypeScript's static type checking.
+
+    cors: CORS (Cross-Origin Resource Sharing) is a middleware for Express that enables cross-origin requests from a web application to your server. It's commonly used to allow web pages hosted on different domains to communicate with your server.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+The package.json file is a manifest file for Node.js projects. It's a JSON (JavaScript Object Notation) file that contains various metadata about the project, such as its name, version, description, dependencies, scripts, and other configurations.
+The package.json file serves as a central configuration file for Node.js projects, allowing developers to manage dependencies, scripts, and other project-related metadata efficiently.
+
+JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is based on a subset of JavaScript syntax but is language-independent, meaning it can be used with virtually any programming language.
+JSON is often used to represent structured data, such as objects and arrays, in a text format.
+JSON is commonly used for transmitting data between a server and a web application, as it is lightweight and easy to parse. It's also widely used for configuration files, APIs, and storing structured data.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+(3) Express is a minimal and flexible Node.js web application framework (Node.js package) that provides a robust set of features for building web and mobile applications. It is designed for building web applications and APIs quickly and easily with its powerful routing system, middleware support, and other utilities.
+
+By importing Express in a Node.js application, you can use its functionalities to create routes, handle HTTP requests and responses, serve static files, set up middleware, and much more. Express simplifies the process of building server-side logic for web applications.
+----------------------------------------------------------------------------------------------------------------------------------------------
+(4) cors stands for Cross-Origin Resource Sharing. It is a mechanism that allows web servers to specify which origins are permitted to access the resources on a server via HTTP headers. This is an important security feature implemented by browsers to prevent cross-origin requests that could potentially lead to security vulnerabilities.
+----------------------------------------------------------------------------------------------------------------------------------------------
+In a package.json file, the "main" field specifies the entry point of your package or application.In the example you provided, "main": "./src/index.ts" indicates that the main entry point of your package is the index.ts file located in the src directory relative to the root of your project.
+
+"start": "npx nodemon ./src/index.ts", the script uses nodemon to watch for changes in the TypeScript file index.ts located in the src directory, and restarts the server automatically whenever changes are detected.When you run npm start or yarn start, the start script will execute nodemon, which in turn will monitor changes to index.ts. If any changes are detected, nodemon will automatically restart the server, allowing you to see the effects of your changes without needing to manually stop and restart the server each time.
