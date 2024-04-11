@@ -1,6 +1,6 @@
-# React-Node Recipe App 🍲
+# Recipe App 🍲
 
-Welcome to the React-Node Recipe App! This application allows users to view, add, and manage their favorite recipes. It's built using React for the frontend and Node.js with Prisma for the backend.
+This application allows users to view, add, and manage their favorite recipes. It's built using React for the frontend and Node.js with Prisma for the backend.
 
 ## Getting Started 🚀
 
@@ -14,8 +14,7 @@ Welcome to the React-Node Recipe App! This application allows users to view, add
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/chrisblakely01/react-node-recipe-app.git
-   cd react-node-recipe-app
+   git clone https://github.com/kinhsiz/RecipeApp.git
    ```
 
 2. **Setting up the Backend**:
