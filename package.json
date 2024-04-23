@@ -1,9 +1,9 @@
 {
-  "name": "rollcall-rooms",
-    "version": "1.0.0",
+  "name": "recipeapp",
+    "version": "3.0.0",
     "main": "",
     "scripts": {
-        "start": "npm start --prefix server",
+        "start": "npm start --prefix backend",
         "install-client": "cd frontend && npm install && npm run build && cd ..",
         "install-server": "cd backend && npm install && cd .. ",
         "heroku-postbuild": "npm run install-client && npm run install-server"
