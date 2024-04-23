@@ -4,9 +4,9 @@
     "main": "",
     "scripts": {
         "start": "npm start --prefix server",
-        "install-client": "cd backend && npm install && npm run build && cd ..",
-        "install-server": "cd frontend && npm install && cd .. ",
-        "heroku-postbuild": "npm run install-backend && npm run install-frontend"
+        "install-client": "cd frontend && npm install && npm run build && cd ..",
+        "install-server": "cd backend && npm install && cd .. ",
+        "heroku-postbuild": "npm run install-client && npm run install-server"
     },
   "devDependencies": {
     "vite": "^5.1.5"
