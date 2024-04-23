@@ -14,6 +14,8 @@ const prismaClient = new PrismaClient();
 app.use(express.json());
 app.use(cors());
 
+const port = process.env.PORT || 5000
+
 //http://localhost:5000/api/recipes/search
 app.get("/api/recipes/search", async (req, res) => { //request(req) is info about what the client is requesting and response(res) is the info sent to client from API
   const searchTerm = req.query.searchTerm as string;
@@ -71,7 +73,7 @@ app.delete("/api/recipes/favourite", async(req, res) =>{
   }
 })
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("Server running on localhost:5000");
 });
 

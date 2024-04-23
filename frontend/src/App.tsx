@@ -120,7 +120,7 @@ const App = () => {
         const isFavorite = favoriteRecipes.some( //some() if at least one element meets condition id == id
           (favRecipe) => recipe.id == favRecipe.id);
         
-        if (recipes.is)
+        if (recipes)
         return (
           <RecipeCard
             recipe={recipe}
