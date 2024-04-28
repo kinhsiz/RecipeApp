@@ -1,18 +1,19 @@
 {
   "name": "recipeapp",
-    "version": "3.0.0",
-    "main": "",
-    "scripts": {
-        "start": "npm start --prefix backend",
-        "build-client": "cd frontend && npm install && npm run build && cd ..",
-        "build-server": "cd backend && npm install && cd .. ",
-        "heroku-postbuild": "npm run build-client && npm run build-server",
-        "dev": "cd frontend && npm run dev"
-    },
+  "version": "3.0.0",
+  "main": "",
+  "scripts": {
+    "start": "npm start --prefix backend",
+    "build-client": "cd frontend && npm install && npm run build && cd ..",
+    "build-server": "cd backend && npm install && cd .. ",
+    "heroku-postbuild": "npm run build-client && npm run build-server",
+    "dev": "cd frontend && npm run dev"
+  },
   "devDependencies": {
     "vite": "^5.1.5"
   },
   "dependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "typescript": "^4.5.4"
   }
 }
